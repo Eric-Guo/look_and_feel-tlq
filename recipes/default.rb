@@ -34,8 +34,8 @@ if node[:environment] == 'production'
 
   banner_path = '/etc/ssh_banner'
 
-  seds << 's/^Banner/#Banner/g'
-  echos << "Banner #{banner_path}"
+  # seds << 's/^Banner/#Banner/g'
+  # echos << "Banner #{banner_path}"
 
   template banner_path do
     owner 'root'
@@ -52,7 +52,7 @@ if node[:environment] == 'production'
     EOC
   end
 
-  # service 'ssh' do
-  #   action :restart
-  # end
+  service 'ssh' do
+    action :restart
+  end
 end
