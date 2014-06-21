@@ -54,8 +54,7 @@ if node[:environment] == 'production'
     EOC
   end
 
-  # service 'ssh' do
-  #   action :restart
-  # end
-  system("sudo service ssh restart")
+  service 'ssh' do
+    action :restart
+  end
 end
