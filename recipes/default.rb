@@ -8,6 +8,8 @@ package 'vim'
 # Because not everyone will send us nice  .tar.gz files
 package 'unzip'
 
+package 'tmux'
+
 
 # Add additional locales
 if node[:locales]

@@ -7,4 +7,5 @@ server. In particular:
 - Install htop (nicer to look at but more resource intensive alternative
 to top)
 - Install unzip
+- Install tmux
 - Add an ASCI art banner on login to production environments
